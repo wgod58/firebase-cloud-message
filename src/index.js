@@ -9,20 +9,19 @@ import { getMessaging, getToken, onMessage } from "firebase/messaging";
 
 // Initialize Firebase
 const firebaseConfig = {
-  apiKey: "AIzaSyAZhBzbnpvmMM-IHnT7LC5fhFJdzPwBKic",
-  authDomain: "local-sprite-323206.firebaseapp.com",
-  projectId: "local-sprite-323206",
-  storageBucket: "local-sprite-323206.appspot.com",
-  messagingSenderId: "102985065768",
-  appId: "1:102985065768:web:de78886acd9362857c1c1d",
+  apiKey: "xxxx",
+  authDomain: "xxx",
+  projectId: "xxx",
+  storageBucket: "xxx",
+  messagingSenderId: "xxx",
+  appId: "xxx",
 };
 const app = firebase.initializeApp(firebaseConfig);
 
 const messaging = getMessaging(app);
 
 getToken(messaging, {
-  vapidKey:
-    "BDNiocAHZTO7KGBWpUr57fJ-6PbNr_LhxM0gJpCwjyaXi6m2xuy7FkBRMy_uddQPvq8X_M2mI2kS3F7A6aBHSZA",
+  vapidKey: "xxx",
 })
   .then((currentToken) => {
     if (currentToken) {
